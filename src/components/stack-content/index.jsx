@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Anchor from "../anchor";
 
 const ContentWrapper = styled.div`
   overflow-y: auto;
@@ -39,6 +40,10 @@ const webApi = "https://dotnet.microsoft.com/apps/aspnet/apis";
 const mernStack = "https://www.mongodb.com/mern-stack";
 const firebase = "https://firebase.google.com/";
 const mongoDb = "https://www.mongodb.com/";
+
+const infosys = "https://www.infosys.com/";
+const university = "https://hindustanuniv.ac.in/";
+const place = "https://en.wikipedia.org/wiki/Chennai";
 
 export const ReactContent = () => (
   <ContentWrapper>
@@ -138,6 +143,34 @@ export const OtherContent = () => (
   </ContentWrapper>
 );
 
-const Anchor = (props) => {
-  return <a {...props} target="_blank" rel="noopener" />;
-};
+const PitchWrapper = styled.div`
+  max-height: inherit;
+  overflow-y: auto;
+
+  font-family: Roboto Mono;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  text-align: center;
+`;
+export const ElevatorPitch = () => (
+  <PitchWrapper>
+    Enthusiastic wep developer with 2+ years of experience in Javscript,
+    AngularJs, ASP.NET frameworks and ReactJs. Passionate to became a full stack
+    developer.
+    <div>
+      <div>
+        Web Dev at <Anchor href={infosys}>Infosys</Anchor>
+      </div>
+      <div>
+        B.Tech graduate at{" "}
+        <Anchor href={university}>Hindustan University</Anchor>
+      </div>
+      <div>
+        Location <Anchor href={place}>Chennai</Anchor>
+      </div>
+    </div>
+  </PitchWrapper>
+);

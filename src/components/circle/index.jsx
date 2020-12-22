@@ -13,8 +13,21 @@ const Wrapper = styled.div`
   justify-content: center;
 
   box-shadow: 0 0 4px 3px #c4c4c4;
+  animation: ${(props) => (props.isSelected ? "1.2s spread infinite" : "none")};
+
+  @keyframes spread {
+    0% {
+      box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+    }
+  }
 `;
-const Circle = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+const Circle = ({ isSelected, children }) => {
+  return <Wrapper isSelected={isSelected}>{children}</Wrapper>;
 };
 export default Circle;

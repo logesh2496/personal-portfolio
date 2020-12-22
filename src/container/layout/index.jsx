@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/header";
+import Profile from "../profile";
 import StackContent from "../stack-content";
 
 const Layout = () => {
@@ -7,6 +8,7 @@ const Layout = () => {
     <div>
       <Header />
       <StackContent />
+      <Profile />
     </div>
   );
 };

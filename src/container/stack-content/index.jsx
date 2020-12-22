@@ -28,32 +28,32 @@ const CircleWrapper = styled.div`
   justify-content: space-around;
 `;
 const StackContent = () => {
-  const [stack, setStack] = useState(stacks.REACT);
+  const [stack, setStack] = useState(null);
   return (
     <Wrapper>
       <CircleWrapper>
-        <Circle>
+        <Circle isSelected={stack === stacks.REACT}>
           <img
             src="./images/react-logo.png"
             style={{ width: "65px" }}
             onClick={() => setStack(stacks.REACT)}
           />
         </Circle>
-        <Circle>
+        <Circle isSelected={stack === stacks.JS}>
           <img
             src="./images/html-css-js.png"
             style={{ width: "62px" }}
             onClick={() => setStack(stacks.JS)}
           />
         </Circle>
-        <Circle>
+        <Circle isSelected={stack === stacks.ASPNET}>
           <img
             src="./images/aspnet.png"
             style={{ width: "55px" }}
             onClick={() => setStack(stacks.ASPNET)}
           />
         </Circle>
-        <Circle>
+        <Circle isSelected={stack === stacks.OTHERS}>
           <img
             src="./images/code-svg.svg"
             style={{ width: "58px" }}

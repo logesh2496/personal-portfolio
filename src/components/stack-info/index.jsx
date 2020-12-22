@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { stacks } from "../../helper/util";
 import {
   AspContent,
+  ElevatorPitch,
   JsContent,
   OtherContent,
   ReactContent,
@@ -10,6 +11,8 @@ import {
 
 const InfoWrapper = styled.div`
   max-height: inherit;
+  height: 100%;
+  color: #888888;
 `;
 
 const StackInfo = ({ stack }) => {
@@ -28,6 +31,7 @@ const StackInfo = ({ stack }) => {
       content = <OtherContent />;
       break;
     default:
+      content = <ElevatorPitch />;
   }
 
   return <InfoWrapper>{content}</InfoWrapper>;
