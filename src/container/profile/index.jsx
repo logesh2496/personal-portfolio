@@ -32,10 +32,11 @@ const ProfileInfo = styled.div`
   max-width: 70%;
   min-width: 40%;
   @media (max-width: 768px) {
-    width: 25%;
-
+    width: 22%;
+    max-width: unset;
+    min-width: unset;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   background: #f6f6f6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

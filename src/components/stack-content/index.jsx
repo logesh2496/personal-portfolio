@@ -11,6 +11,11 @@ const UlWrapper = styled.ul`
   font-family: "Roboto Mono", monospace;
   line-height: 1.6;
 `;
+const Header = styled.div`
+  font-weight: bold;
+  text-align: center;
+`;
+
 const gmailRestApi =
   "https://developers.google.com/gmail/api/reference/rest/v1/users";
 const webSql = `https://www.w3.org/TR/webdatabase/`;
@@ -45,9 +50,17 @@ const infosys = "https://www.infosys.com/";
 const university = "https://hindustanuniv.ac.in/";
 const place = "https://en.wikipedia.org/wiki/Chennai";
 
+const fastFingers = "https://fastfingers-logesh.netlify.app/";
+const ffGithub =
+  "https://github.com/pesto-students/fast-fingers-b04-logesh2496";
+
+const monopoly = "https://monopoly-logesh.netlify.app/";
+const mmGithub = "https://github.com/pesto-students/monopoly-logesh2496";
+
 export const ReactContent = () => (
   <ContentWrapper>
     <UlWrapper>
+      <Header>React</Header>
       <li>
         Developed a purely client based email-client with the help of{" "}
         <Anchor href={gmailRestApi}>gmail REST api</Anchor>.
@@ -68,12 +81,21 @@ export const ReactContent = () => (
         <Anchor href={labels}>Labels</Anchor> using{" "}
         <Anchor href={reactUrl}>React</Anchor> libraries.
       </li>
+      <Header>Project</Header>
+      <div>
+        Fast Fingers
+        <div>
+          <Anchor href={fastFingers}>Game</Anchor> |{" "}
+          <Anchor href={ffGithub}>Github</Anchor>
+        </div>
+      </div>
     </UlWrapper>
   </ContentWrapper>
 );
 export const JsContent = () => (
   <ContentWrapper>
     <UlWrapper>
+      <Header>HTML, CSS &amp; JS</Header>
       <li>
         Worked on a{" "}
         <Anchor href={dataGrid} target="_blank">
@@ -96,12 +118,21 @@ export const JsContent = () => (
         <Anchor href={garbageCollection}>garbage collection</Anchor>) for every
         test case in <Anchor href={typescript}>TypeScript</Anchor>.
       </li>
+      <div>
+        <Header>Project</Header>
+        Monopoly
+        <div>
+          <Anchor href={monopoly}>Game</Anchor> |{" "}
+          <Anchor href={mmGithub}>Github</Anchor>
+        </div>
+      </div>
     </UlWrapper>
   </ContentWrapper>
 );
 export const AspContent = () => (
   <ContentWrapper>
     <UlWrapper>
+      <Header>ASP.Net</Header>
       <li>
         Worked on <Anchor href={mvc}>ASP.Net MVC</Anchor>,{" "}
         <Anchor href={core}>ASP.Net Core</Anchor> and{" "}
@@ -125,6 +156,7 @@ export const AspContent = () => (
 export const OtherContent = () => (
   <ContentWrapper>
     <UlWrapper>
+      <Header>Other Learnings</Header>
       <li>
         Have completed a certification course in{" "}
         <Anchor href={mernStack}>MERN</Anchor> stack.
@@ -147,6 +179,7 @@ const PitchWrapper = styled.div`
   max-height: inherit;
   overflow-y: auto;
 
+  margin-top: 15px;
   font-family: Roboto Mono;
   font-size: 18px;
   display: flex;
