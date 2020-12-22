@@ -72,11 +72,6 @@ const Profile = () => {
             src="./images/logesh-profile-pic.jpg"
             style={{ height: "100%" }}
           ></img>
-          {/* <PersonalInfo>
-            <div>Infosys</div>
-            <div>Hindustan University</div>
-            <div>Github</div>
-          </PersonalInfo> */}
         </ProfilePicWrapper>
         <ProfileInfo>
           <SayHi>Say hi👋</SayHi>

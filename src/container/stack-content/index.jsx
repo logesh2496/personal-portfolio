@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 const InfoContainter = styled.div`
   margin-top: 50px;
-  height: 200px;
+  min-height: 120px;
   max-height: 200px;
   width: 80%;
 

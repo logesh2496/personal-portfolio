@@ -178,22 +178,26 @@ export const OtherContent = () => (
 const PitchWrapper = styled.div`
   max-height: inherit;
   overflow-y: auto;
-
-  margin-top: 15px;
+  box-sizing: border-box;
   font-family: Roboto Mono;
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 100%;
   text-align: center;
+  padding: 10px;
+`;
+const PitchInfo = styled.div`
+  margin-top: 10px;
 `;
 export const ElevatorPitch = () => (
   <PitchWrapper>
-    Enthusiastic wep developer with 2+ years of experience in Javscript,
-    AngularJs, ASP.NET frameworks and ReactJs. Passionate to became a full stack
-    developer.
     <div>
+      Enthusiastic wep developer with 2+ years of experience in Javscript,
+      AngularJs, ASP.NET frameworks and ReactJs. Passionate to became a full
+      stack developer.
+    </div>
+    <PitchInfo>
       <div>
         Web Dev at <Anchor href={infosys}>Infosys</Anchor>
       </div>
@@ -204,6 +208,6 @@ export const ElevatorPitch = () => (
       <div>
         Location <Anchor href={place}>Chennai</Anchor>
       </div>
-    </div>
+    </PitchInfo>
   </PitchWrapper>
 );
