@@ -2,6 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Logesh",
+    "email": "logesh.r24@gmail.com",
+    "url": "http://logesh-rajappa.netlify.app/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
