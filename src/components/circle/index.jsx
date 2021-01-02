@@ -12,7 +12,14 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  box-shadow: 0 0 4px 3px #c4c4c4;
+  transform: ${(props) => (props.isSelected ? "translateY(62%)" : "none")};
+
+  transition-duration: 0.8s;
+
+  transition-property: transform, border-bottom-left-radius;
+  border-bottom-left-radius: ${(props) => (props.isSelected ? "0px" : "none")};
+
+  box-shadow: 0 0 0px 1px #c4c4c4;
   animation: ${(props) => (props.isSelected ? "1.2s spread infinite" : "none")};
 
   @keyframes spread {
